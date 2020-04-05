@@ -60,8 +60,8 @@ app.listen(config.port, () => {
         // 创建初始化数据
         const initData = require('./initData');
         initData();
-        console.log('sequelize connect success');
-        console.log(`sever listen on http://127.0.0.1:${config.port}`);
+        console.log('数据库链接成功，服务启动成功，接口地址：');
+        console.log(`sever listen on http://127.0.0.1:${config.port}/article/list`);
     }).catch(err => {
         // 输入错误信息
         console.log(err);
